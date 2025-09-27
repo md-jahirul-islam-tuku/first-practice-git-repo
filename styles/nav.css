@@ -1,10 +1,20 @@
 nav>ul {
-  margin-left: 50%;
   display: flex;
   list-style: none;
+  margin-left: 50%;
+}
+
+nav ul li {
   color: black;
   font-size: 20px;
   font-weight: 700;
+}
+
+ul li a {
+  margin-right: 15px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: black;
 }
 
 ul li a:hover {
@@ -15,18 +25,19 @@ ul li a:hover {
   border-radius: 4px;
 }
 
-ul li a {
-  margin-right: 15px;
-  text-decoration: none;
-  padding: 5px 10px;
-  color: black;
-}
-
-#dropdown {
+nav li #dropdown {
   display: none;
   list-style: none;
+  background-color: bisque;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
 }
 
-ul li:hover #dropdown {
+nav li #dropdown li {
+  margin-bottom: 10px;
+}
+
+nav li:hover #dropdown {
   display: block;
 }
